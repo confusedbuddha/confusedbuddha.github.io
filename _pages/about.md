@@ -13,11 +13,11 @@ profile:
     <p>123 your address street</p>
     <p>Your City, State 12345</p>
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
+selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 
 announcements:
-  enabled: true # includes a list of news items
+  enabled: false # includes a list of news items
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
   limit: 5 # leave blank to include all the news in the `_news` folder
 
@@ -27,8 +27,29 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](https://www.reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+Hello! I'm Lalitha Rao, an undergraduate student studying mechanical engineering at The Cooper Union. Currently, I am working on developing data pipelines to process Pollen Robotics arm telemetry for LeRobot imitation learning as a research intern at the NYU Tandon Machines in Motion Laboratory. 
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+This site hosts posts about my current research, engineering projects, and outreach.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+* **Email:** [Your Email Here]
+* **Curriculum Vitae:** [Download PDF]({{ '/assets/pdf/LalithaRaoResume.pdf' | relative_url }})
+
+<hr>
+
+**Research Update! Imitation Learning Data Pipelines - Summer 2026.**
+As a research intern at the Machines in Motion Lab, I am developing Python and PyTorch pipelines to process Pollen Robotics arm telemetry and camera transforms from raw HDF5 files into Parquet shards while streaming encoder inputs into MuJoCo physics environments.
+
+**Project Update! Mechanical Rectifier System - September 2026.**
+My latest mechanical build is a transmission assembly designed to stabilize variable input velocity. It was a great opportunity to apply dynamic modeling principles to a physical build. 
+
+**Project Archive! Folk Acrobat Toy Dynamic Modeling.**
+I derived the equations of motion and developed numerical Python simulations to model the complex dynamics of a traditional folk acrobat toy. 
+
+**Project Archive! Autonomous Robot Design.**
+I designed and programmed a multi-task autonomous robot implementing closed-loop PID line-following algorithms. 
+
+**Research Update! Flapping Insect Locomotion.**
+I conducted experimental research validating power output models in flapping insect locomotion. My work involved 3D-printing whirligig beetle wing models and building Arduino-controlled flapping mechanisms.
+
+**Publication Alert! The Flow of Light - 2024.**
+I authored an introductory physics textbook on optics and light behavior titled *The Flow of Light*, which is published on Amazon.
