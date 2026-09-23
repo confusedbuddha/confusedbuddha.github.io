@@ -26,6 +26,11 @@ latest_posts:
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 ---
+<style>
+  body {
+    background-color: #d7bfdc !important;
+  }
+</style>
 
 Hello! I'm Lalitha Rao, an undergraduate student studying mechanical engineering at The Cooper Union. Currently, I am working on developing data pipelines to process Pollen Robotics arm telemetry for LeRobot imitation learning as a research intern at the NYU Tandon Machines in Motion Laboratory. 
 
