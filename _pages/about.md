@@ -7,47 +7,48 @@ subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
 profile:
   align: right
   image: myface.jpeg
-  image_circular: false # crops the image to make it circular
+  image_circular: false
   more_info: >
     <p>555 your office number</p>
     <p>123 your address street</p>
     <p>Your City, State 12345</p>
 
-selected_papers: false # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+selected_papers: false
+social: true
 
 announcements:
-  enabled: false # includes a list of news items
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
+  enabled: false
+  scrollable: true
+  limit: 5
 
 latest_posts:
   enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
+  scrollable: true
+  limit: 3
 ---
-<style>
-  body {
-    background-color: #d7bfdc !important;
-  }
-</style>
+
 <style>
   /* Import the fonts from Google */
- @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+  @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
 
-  /* Apply Outfit to all standard paragraph text for readability */
+  /* Apply Lora to standard paragraph text and set background */
   body {
-    font-family: 'Inter', sans-serif !important;
+    font-family: "Lora", serif !important;
+    background-color: #d7bfdc !important;
     color: #333333 !important;
-    /* background-color: #f4f4f9 !important; Uncomment this if you want the colored background */
   }
-  
-  /* Apply Space Grotesk to all headers for a technical personality */
-  h1, h2, h3, h4, h5, h6 {
-    font-family: 'Inter', sans-serif !important;
+
+  /* Apply Lora and custom color to all headers */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Lora", serif !important;
     font-weight: 700 !important;
     letter-spacing: -0.5px;
-    color: #004488
+    color: #004488 !important;
   }
 </style>
 
