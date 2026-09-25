@@ -2,16 +2,12 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: ""
 
 profile:
   align: right
   image: myface.jpeg
   image_circular: false
-  more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
 
 selected_papers: false
 social: true
@@ -28,17 +24,17 @@ latest_posts:
 ---
 
 <style>
-  /* Apply Lora and custom color to all headers */
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
+  @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+  
+  /* Set the background */
+  body {
+    background-color: #d7bfdc !important;
+  }
+
+  /* Force all text elements to be Lora and dark grey */
+  body, p, li, a, h1, h2, h3, h4, h5, h6 {
     font-family: "Lora", serif !important;
-    font-weight: 700 !important;
-    letter-spacing: -0.5px;
-    color: #333333 !important; 
+    color: #333333 !important;
   }
 </style>
 
