@@ -31,8 +31,8 @@ latest_posts:
     background-color: #d7bfdc !important;
   }
 
-  /* Force all text elements to be Lora and dark grey */
-  body, p, li, a, h1, h2, h3, h4, h5, h6 {
+  /* Force all text elements, including spans and bold text, to be Lora and dark grey */
+  body, p, li, a, h1, h2, h3, h4, h5, h6, span, strong {
     font-family: "Lora", serif !important;
     color: #333333 !important;
   }
