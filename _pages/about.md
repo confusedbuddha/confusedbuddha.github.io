@@ -31,6 +31,25 @@ latest_posts:
     background-color: #d7bfdc !important;
   }
 </style>
+<style>
+  /* Import the fonts from Google */
+ @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+  /* Apply Outfit to all standard paragraph text for readability */
+  body {
+    font-family: 'Inter', sans-serif !important;
+    color: #333333 !important;
+    /* background-color: #f4f4f9 !important; Uncomment this if you want the colored background */
+  }
+  
+  /* Apply Space Grotesk to all headers for a technical personality */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', sans-serif !important;
+    font-weight: 700 !important;
+    letter-spacing: -0.5px;
+    color: #004488
+  }
+</style>
 
 Hello! I'm Lalitha Rao, an undergraduate student studying mechanical engineering at The Cooper Union. Currently, I am working on developing data pipelines to process Pollen Robotics arm telemetry for LeRobot imitation learning as a research intern at the NYU Tandon Machines in Motion Laboratory. 
 
