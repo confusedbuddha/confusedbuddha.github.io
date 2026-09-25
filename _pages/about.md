@@ -47,7 +47,7 @@ latest_posts:
     font-family: "Lora", serif !important;
     font-weight: 700 !important;
     letter-spacing: -0.5px;
-    color: #004488 !important;
+    color: #333333 !important; 
   }
 </style>
 
