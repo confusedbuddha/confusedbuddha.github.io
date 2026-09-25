@@ -40,6 +40,9 @@ latest_posts:
   /* Remove the default bolding from the first name */
   h1 span {
     font-weight: normal !important;
+    {
+    font-weight: normal !important;
+  }
   }
 </style>
 
