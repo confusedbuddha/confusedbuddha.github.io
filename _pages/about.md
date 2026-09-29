@@ -18,7 +18,7 @@ announcements:
   limit: 5
 
 latest_posts:
-  enabled: true
+  enabled: false
   scrollable: true
   limit: 3
 ---
@@ -37,38 +37,18 @@ latest_posts:
     color: #333333 !important;
   }
 
-  /* Remove the default bolding from the first name */
-  h1 span {
+  /* Remove the built-in bolding from the first name class */
+  .font-weight-bold {
     font-weight: normal !important;
-    {
-    font-weight: normal !important;
-  }
   }
 </style>
 
-Hello! I'm Lalitha Rao, an undergraduate student studying mechanical engineering at The Cooper Union. Currently, I am working on developing data pipelines to process Pollen Robotics arm telemetry for LeRobot imitation learning as a research intern at the NYU Tandon Machines in Motion Laboratory. 
+Hello! I'm Lalitha Rao, an undergraduate mechanical engineering student at The Cooper Union. My work focuses on robotics, hardware-in-the-loop simulations, and dynamic modeling, combining theoretical analysis with practical mechatronic fabrication. 
 
-This site hosts posts about my current research, engineering projects, and outreach.
+Currently, I am a paid Research Intern at the NYU Tandon Machines in Motion Laboratory, where I engineer data pipelines to process Pollen Robotics arm telemetry into Parquet shards for PyTorch LeRobot imitation learning. 
+
+Beyond research, I am a STEM Ambassador at Cooper Union and the published author of an introductory physics textbook, *The Flow of Light*. I enjoy blending software (Python, PyTorch, MATLAB, C++) with hardware design (CAD, finite element analysis, and physical machining) to build robust electromechanical systems.
 
 * **Email:** [Your Email Here]
 * **Curriculum Vitae:** [Download PDF]({{ '/assets/pdf/LalithaRaoResume.pdf' | relative_url }})
-
-<hr>
-
-**Research Update! Imitation Learning Data Pipelines - Summer 2026.**
-As a research intern at the Machines in Motion Lab, I am developing Python and PyTorch pipelines to process Pollen Robotics arm telemetry and camera transforms from raw HDF5 files into Parquet shards while streaming encoder inputs into MuJoCo physics environments.
-
-**Project Update! Mechanical Rectifier System - September 2026.**
-My latest mechanical build is a transmission assembly designed to stabilize variable input velocity. It was a great opportunity to apply dynamic modeling principles to a physical build. 
-
-**Project Archive! Folk Acrobat Toy Dynamic Modeling.**
-I derived the equations of motion and developed numerical Python simulations to model the complex dynamics of a traditional folk acrobat toy. 
-
-**Project Archive! Autonomous Robot Design.**
-I designed and programmed a multi-task autonomous robot implementing closed-loop PID line-following algorithms. 
-
-**Research Update! Flapping Insect Locomotion.**
-I conducted experimental research validating power output models in flapping insect locomotion. My work involved 3D-printing whirligig beetle wing models and building Arduino-controlled flapping mechanisms.
-
-**Publication Alert! The Flow of Light - 2024.**
-I authored an introductory physics textbook on optics and light behavior titled *The Flow of Light*, which is published on Amazon.
+* **Engineering Portfolio:** [View My Projects](/projects/)
