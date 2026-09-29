@@ -60,6 +60,6 @@ During the summer, I worked at NYU Tandon in the Machines in Motion Laboratory a
 
 Beyond research, I am a STEM Ambassador at Cooper Union and the published author of an introductory physics textbook, *The Flow of Light*. I enjoy blending software (Python, PyTorch, MATLAB, C++) with hardware design (CAD, finite element analysis, and physical machining) to build robust electromechanical systems.
 
-* **Email:** [Your Email Here]
+* **Email:** lalitha.rao158@gmail.com
 * **Curriculum Vitae:** [Download PDF]({{ '/assets/pdf/LalithaRaoResume.pdf' | relative_url }})
-* **Engineering Portfolio:** [View My Projects](/projects/)
+* **Engineering Portfolio:** [Projects!](/projects/)

@@ -1,8 +1,8 @@
 ---
 layout: page
-title: project 1
-description: with background image
-img: assets/img/12.jpg
+title: 9 DoF Data Glove 
+description: Built off Pollen Robotics design, however with different electronic hardware. 
+img: assets/img/glove_full.jpg
 importance: 1
 category: work
 related_publications: true
