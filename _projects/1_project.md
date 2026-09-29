@@ -7,75 +7,28 @@ importance: 1
 category: work
 related_publications: true
 ---
+During my research internship at the Machines in Motion Laboratory, I engineered a 9 Degrees of Freedom (DoF) data collection glove to facilitate imitation learning. 
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+### 1. Concept: Universal Manipulation Interface (UMI)
+Training robotic policies via teleoperation is often slow and expensive[cite: 9]. To solve this, I helped develop a system that uses a human hand as a stand-in for a robot's end-effector[cite: 9]. The device records the gripper state, visual context, and trajectory of a robotic end-effector without requiring actual motors or actuators[cite: 9].
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+### 2. Hardware Architecture
+While the physical chassis was adopted from Pollen Robotics (using a PLA body and TPU grips), I integrated entirely custom electronics to capture high-fidelity telemetry[cite: 9]:
+* **Intel RealSense T265:** Combines two fisheye cameras with a built-in IMU to provide real-time 6 DoF pose estimation (X, Y, Z, roll, pitch, yaw)[cite: 9]. 
+* **RGB Camera:** Captures the visual scene so the robotic policy can learn the visual context of when and where to act[cite: 9].
+* **AS5600 Magnetic Position Sensors:** Record angle data using a small magnet positioned below each encoder[cite: 9].
+* **Processing Units:** An Arduino Teensy reads the AS5600 data and passes it to a Raspberry Pi[cite: 9]. The Pi acts as the central brain to route the incoming camera and encoder data[cite: 9].
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+### 3. Data Synchronization Pipeline
+A critical requirement for training an accurate policy is synchronizing data, as the T265, RGB camera, and AS5600 sensors all sample at different rates[cite: 9]. 
+* To solve this, the Raspberry Pi assumes all sensor readings within a single loop iteration occur simultaneously and stamps them with a single exact timestamp[cite: 9]. 
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+### 4. Verification & Visualization
+Using the glove, I executed and recorded telemetry for simple manipulation tasks, such as placing a ball inside a basket and cleaning a whiteboard. 
+* **Pose Estimation:** Extracted directly from the T265 onboard processing[cite: 9].
+* **Visualization:** The synchronized pose coordinates and encoder data were graphed and visualized using ReRun[cite: 9].
+* **Simulation:** The data was verified inside MuJoCo physics environments before being processed into Parquet shards to train AI policies via PyTorch LeRobot[cite: 9].
 
-You can also put regular text between your rows of images, even citations {% cite einstein1950meaning %}.
-Say you wanted to write a bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
-
-{% endraw %}
+### 5. Engineering Challenges
+* **Design Pivot:** I initially designed a highly form-fitted gripper, but pivoted to the current design due to the difficulty of cleanly embedding the encoders[cite: 9]. 
+* **Hardware Compatibility:** The system required troubleshooting communication pipelines, as the Raspberry Pi was fundamentally incompatible with the T265 initially, and a lack of available USB ports caused hardware conflicts[cite: 9].
