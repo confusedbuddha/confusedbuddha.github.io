@@ -43,9 +43,9 @@ latest_posts:
   }
 </style>
 
-Hello! I'm Lalitha Rao, an undergraduate mechanical engineering student at The Cooper Union. My work focuses on robotics, hardware-in-the-loop simulations, and dynamic modeling, combining theoretical analysis with practical mechatronic fabrication. 
+Hello! I'm Lalitha Rao, an undergraduate mechanical engineering student at The Cooper Union. My interests are controls engineering, mechanical design and dynamic modelling. 
 
-Currently, I am a paid Research Intern at the NYU Tandon Machines in Motion Laboratory, where I engineer data pipelines to process Pollen Robotics arm telemetry into Parquet shards for PyTorch LeRobot imitation learning. 
+During the summer, I worked at NYU Tandon in the Machines in Motion Laboratory as a paid research intern. Here I engineered a 9 DoF data collection glove, utilizing a Pollen Robotics chassis integrated with entirely custom electronics. With the glove I collected data from simple tasks such as placing a ball inside a basket and cleaning a whiteboard. This data is now used to train AI policies. Read more [here](/projects/).
 
 Beyond research, I am a STEM Ambassador at Cooper Union and the published author of an introductory physics textbook, *The Flow of Light*. I enjoy blending software (Python, PyTorch, MATLAB, C++) with hardware design (CAD, finite element analysis, and physical machining) to build robust electromechanical systems.
 
