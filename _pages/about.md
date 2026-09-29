@@ -25,14 +25,25 @@ latest_posts:
 
 <style>
   @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
-  
+
   /* Set the background */
   body {
     background-color: #d7bfdc !important;
   }
 
   /* Force all text elements, including spans and bold text, to be Lora and dark grey */
-  body, p, li, a, h1, h2, h3, h4, h5, h6, span, strong {
+  body,
+  p,
+  li,
+  a,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  span,
+  strong {
     font-family: "Lora", serif !important;
     color: #333333 !important;
   }
@@ -43,7 +54,7 @@ latest_posts:
   }
 </style>
 
-Hello! I'm Lalitha Rao, an undergraduate mechanical engineering student at The Cooper Union. My interests are controls engineering, mechanical design and dynamic modelling. 
+Hello! I'm Lalitha Rao, an undergraduate mechanical engineering student at The Cooper Union. My work focuses on robotics, hardware-in-the-loop simulations, and dynamic modeling, combining theoretical analysis with practical mechatronic fabrication.
 
 During the summer, I worked at NYU Tandon in the Machines in Motion Laboratory as a paid research intern. Here I engineered a 9 DoF data collection glove, utilizing a Pollen Robotics chassis integrated with entirely custom electronics. With the glove I collected data from simple tasks such as placing a ball inside a basket and cleaning a whiteboard. This data is now used to train AI policies. Read more [here](/projects/).
 
